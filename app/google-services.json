@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "642974079298",
+    "firebase_url": "https://schooltyari-2057a-default-rtdb.firebaseio.com",
+    "project_id": "schooltyari-2057a",
+    "storage_bucket": "schooltyari-2057a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642974079298:android:0e61bac6e6b45e819b50db",
+        "android_client_info": {
+          "package_name": "com.school.tyari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642974079298-2e7jch2riq1f7cp17pnsqjlc0p1sbd8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.school.tyari",
+            "certificate_hash": "17ceefe3a46a588a7816a25ed05ce8a7a8a0bcae"
+          }
+        },
+        {
+          "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JCRv0U6m85-lJ8vfiCK3SxjgkVa6244"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642974079298:android:4ef1cb342c9023149b50db",
+        "android_client_info": {
+          "package_name": "com.schoolfirst.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JCRv0U6m85-lJ8vfiCK3SxjgkVa6244"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642974079298:android:eac09847ecd1779e9b50db",
+        "android_client_info": {
+          "package_name": "com.schoolquiz.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JCRv0U6m85-lJ8vfiCK3SxjgkVa6244"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642974079298:android:467c31974e51d07d9b50db",
+        "android_client_info": {
+          "package_name": "com.schooltyari.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JCRv0U6m85-lJ8vfiCK3SxjgkVa6244"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642974079298-cr6vfinou33lbbl2st8r1s4fpmct1c9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
