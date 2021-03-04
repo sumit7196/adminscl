@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/teacherEmail"
-                android:text="shubha@gmail.com"
+                android:text="123456789"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"/>
 
@@ -62,6 +62,7 @@
             android:id="@+id/teacherImage"
             android:layout_width="80dp"
             android:layout_height="120dp"
+            android:src="@drawable/teacher_img"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.5"/>
 

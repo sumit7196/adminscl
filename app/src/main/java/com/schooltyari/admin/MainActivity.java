@@ -12,7 +12,7 @@ import com.schooltyari.admin.faculty.FacultyActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView uploadNotice,addGalleryImage,addEbook,faculty,deleteNotice;
+    CardView uploadNotice,addGalleryImage,addEbook,faculty,deleteNotice,homework;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addEbook = findViewById(R.id.addEbook);
         faculty = findViewById(R.id.faculty);
         deleteNotice = findViewById(R.id.deleteNotice);
+        homework = findViewById(R.id.homework);
 
         uploadNotice.setOnClickListener(this);
         addGalleryImage.setOnClickListener(this);
         addEbook.setOnClickListener(this);
         faculty.setOnClickListener(this);
         deleteNotice.setOnClickListener(this);
+        homework.setOnClickListener(this);
 
     }
 
@@ -58,6 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, DeleteNoticeActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.homework:
+                intent = new Intent(MainActivity.this, MainSellerActivity.class);
+                startActivity(intent);
+                break;
+
         }
 
     }

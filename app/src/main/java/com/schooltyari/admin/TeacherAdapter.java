@@ -40,10 +40,15 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.TeacherV
     @Override
     public void onBindViewHolder(@NonNull TeacherViewAdapter holder, int position) {
 
+
         final TeacherData item = list.get(position);
         holder.name.setText(item.getName());
         holder.email.setText(item.getEmail());
         holder.post.setText(item.getPost());
+
+
+
+
         try {
             Picasso.get().load(item.getImage()).into(holder.imageView);
         } catch (Exception e) {

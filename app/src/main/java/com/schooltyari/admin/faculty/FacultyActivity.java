@@ -27,9 +27,9 @@ public class FacultyActivity extends AppCompatActivity {
 
     FloatingActionButton fab;
     private RecyclerView englishDepart, mathDepart, physicsDepartment, chemistryDepartment,biologyDepartment,
-            computerDepartment,physicalDepartment,hindiDepartment;
+            computerDepartment,hindiDepartment;
     private LinearLayout engNoData, mathNoData, physicsNoData, chemistryNoData,bioNoData,
-            computrNoData,physicalNoData,hindiNoData;
+            computrNoData,hindiNoData;
     private List<TeacherData> list1, list2, list3, list4;
     private TeacherAdapter adapter;
 
@@ -45,7 +45,6 @@ public class FacultyActivity extends AppCompatActivity {
         chemistryDepartment = findViewById(R.id.chemistryDepartment);
         biologyDepartment = findViewById(R.id.biologyDepartment);
         computerDepartment = findViewById(R.id.computerDepartment);
-        physicalDepartment = findViewById(R.id.physicalDepartment);
         hindiDepartment = findViewById(R.id.hindiDepartment);
 
 
@@ -55,7 +54,6 @@ public class FacultyActivity extends AppCompatActivity {
         chemistryNoData = findViewById(R.id.chemistryNoData);
         bioNoData = findViewById(R.id.biologyNoData);
         computrNoData = findViewById(R.id.computerNoData);
-        physicalNoData = findViewById(R.id.physicalNoData);
         hindiNoData = findViewById(R.id.hindiNoData);
 
 
@@ -67,7 +65,6 @@ public class FacultyActivity extends AppCompatActivity {
         chemistryDepartment();
         biologyDepartment();
         computerDepartment();
-        physicalDepartment();
         hindiDepartment();
 
 
@@ -263,35 +260,7 @@ public class FacultyActivity extends AppCompatActivity {
         });
     }
 
-    private void physicalDepartment () {
-        dbRef = reference.child("Physical");
-        dbRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                list4 = new ArrayList<>();
-                if (!dataSnapshot.exists()) {
-                    physicalNoData.setVisibility(View.VISIBLE);
-                    physicalDepartment.setVisibility(View.GONE);
-                } else {
-                    physicalNoData.setVisibility(View.GONE);
-                    physicalDepartment.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                        TeacherData data = snapshot.getValue(TeacherData.class);
-                        list4.add(data);
-                    }
-                    physicalDepartment.setHasFixedSize(true);
-                    physicalDepartment.setLayoutManager(new LinearLayoutManager(FacultyActivity.this));
-                    adapter = new TeacherAdapter(list4, FacultyActivity.this, "Physical");
-                    physicalDepartment.setAdapter(adapter);
-                }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(FacultyActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
     private void hindiDepartment () {
         dbRef = reference.child("Hindi");

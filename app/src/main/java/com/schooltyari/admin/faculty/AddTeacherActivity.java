@@ -62,10 +62,10 @@ public class AddTeacherActivity extends AppCompatActivity {
 
         pd=  new ProgressDialog(this);
 
-        reference = FirebaseDatabase.getInstance().getReference("SchoolFirst").child("teacher");
+        reference = FirebaseDatabase.getInstance().getReference().child("teacher");
         storageReference = FirebaseStorage.getInstance().getReference("SchoolFirst");
 
-        String[] items = new String[]{"Select Category", "English","Math", "Physics", "Chemistry","Biology","Computer","Physical Education","Hindi",};
+        String[] items = new String[]{"Select Category", "English","Math", "Physics", "Chemistry","Biology","Computer","Hindi"};
         addTeacherCategory.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,items));
 
         addTeacherCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

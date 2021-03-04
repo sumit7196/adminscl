@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".EditProductActivity"></activity>
+        <activity android:name=".MainSellerActivity" />
+        <activity android:name=".HomeworkActivity" />
         <activity android:name=".faculty.DeleteNoticeActivity" />
         <activity android:name=".faculty.UpdateTeacherActivity" />
         <activity android:name=".faculty.AddTeacherActivity" />
@@ -22,7 +24,7 @@
         <activity android:name=".UploadPdfActivity" />
         <activity android:name=".UploadImage" />
         <activity android:name=".UploadNotice" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
